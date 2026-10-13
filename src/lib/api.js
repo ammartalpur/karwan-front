@@ -6,7 +6,7 @@ import weightsMock from "../mocks/weights.json";
 import { rescoreAll, scoreRequest } from "./mockScore.js";
 
 const USE_MOCKS = import.meta.env.VITE_USE_MOCKS === "true";
-const BASE = (import.meta.env.VITE_API_URL || "http://localhost:4000") + "/api";
+const BASE = (import.meta.env.API_URL || "http://localhost:4000") + "/api";
 
 // Every MVP backend phase is complete. Set VITE_USE_MOCKS=true and remove a
 // feature here only when intentionally demonstrating its local mock instead.
